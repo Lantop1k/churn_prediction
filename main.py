@@ -13,7 +13,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-data=pd.read_csv("LMS Video Engagement Data.csv")
+file_id = "vCtATtPYv2PJzfL-ZRpj9BnmgS-QwNx"  # your file ID
+url = f"https://drive.google.com/uc?id={file_id}"
+
+data=pd.read_csv(url)
 
 # Input model
 # model requires learner id and video title
