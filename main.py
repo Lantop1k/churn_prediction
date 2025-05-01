@@ -13,10 +13,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-file_id = "vCtATtPYv2PJzfL-ZRpj9BnmgS-QwNx"  # your file ID
+file_id = "17vCtATtPYv2PJzfL-ZRpj9BnmgS-QwNx"
 url = f"https://drive.google.com/uc?id={file_id}"
 
-data=pd.read_csv(url)
+data = pd.read_csv(url)
+print(data.head())
+
 
 # Input model
 # model requires learner id and video title
